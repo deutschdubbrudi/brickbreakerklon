@@ -161,7 +161,8 @@ let timer =
 		Zeichnen()
 		{
 			//~ this.Element.style.width = (450 - 450 * (1 - this.momentaneZeit / level[game.currentlvl].timer)) + "px"
-			this.Element.style.width = (gamecontainer.width * this.verbleibendeZeitAnteil) + "px"
+			//~ this.Element.style.width = (gamecontainer.width * this.verbleibendeZeitAnteil) + "px"
+			this.Element.style.transform = "scaleX(" +  this.verbleibendeZeitAnteil + ")"
 		},
 		Pruefen()
 		{
