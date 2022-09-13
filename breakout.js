@@ -66,7 +66,7 @@ let game =
 			//~ }
 			if(game.currentlvl == 5 && (level[5].timer - timer.momentaneZeit) / game.logicCalcsPerSecond > 15)
 			{
-				return (1 - timer.verbleibendeZeitAnteil) * 2 + 1.5
+				return (1 - timer.verbleibendeZeitAnteil) * 2 + 1.75
 			}
 			return (1 - timer.verbleibendeZeitAnteil) * 2 + 1
 		},
@@ -322,16 +322,16 @@ let level =
 			layout:
 			[
 			 [6, 0, 7, 0, 6, 7],
-			 [7, 6, 0, 6, 7, 6],
-			 [6, 7, 6, 7, 6, 0],
-			 [0, 6, 7, 6, 0, 7],
-			 [6, 7, 6, 7, 6, 0],
-			 [7, 6, 0, 6, 7, 6],
+			 [1, 6, 0, 6, 1, 6],
+			 [6, 1, 2, 1, 6, 0],
+			 [0, 2, 3, 2, 0, 7],
+			 [6, 1, 2, 1, 6, 0],
+			 [1, 6, 0, 6, 1, 6],
 			 [6, 0, 7, 0, 6, 7],
 			 [0, 7, 0, 7, 0, 6],
 			 [0, 0, 0, 0, 0, 0],
 			],
-			timer: 210 * game.logicCalcsPerSecond
+			timer: 180 * game.logicCalcsPerSecond
 		},		
 	]
 
