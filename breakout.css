@@ -33,7 +33,7 @@ html { overflow-y: hidden; overflow-x:hidden; }
 /*
     background-image: url("ball.png");
 */
-    background-color: grey;
+    background-color: white;
     border: solid black 2px;
     position: absolute;
     left: 0px;
@@ -44,7 +44,7 @@ html { overflow-y: hidden; overflow-x:hidden; }
 }
 .gesteuerteplattform
 {
-    background-color: black;
+    background-color: lightgrey;
     /*border: solid black 2px;*/
     height: 25px;
     position: absolute;
