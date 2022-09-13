@@ -1,0 +1,194 @@
+html { overflow-y: hidden; overflow-x:hidden; }
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+#button
+{
+	background-color: beige
+}
+
+#gamecontainer
+{
+	margin:auto;
+    width: 450px;
+    height: 800px;
+    border:none;
+    border-top: none;
+    border-bottom: none;
+    position: relative;
+    z-index: 0;
+	transform-origin: 0 0;
+	background-image: url("hintergrund.png");
+	touch-action: manipulation;
+}
+.ball
+{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+/*
+    background-image: url("ball.png");
+*/
+    background-color: grey;
+    border: solid black 2px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: -1;
+    pointer-events: none;
+    /*transition: bottom 0.1s, left 0.1s;*/
+}
+.gesteuerteplattform
+{
+    background-color: black;
+    /*border: solid black 2px;*/
+    height: 25px;
+    position: absolute;
+    bottom: 40px;
+    /*transition: bottom 0.1s, left 0.1s;*/
+    z-index: -2;
+	pointer-events: none;
+	border-radius: 2px;
+}
+
+.brick
+{
+    position: absolute;
+    height: 80px;
+    z-index: -2;
+	pointer-events: none;
+/*
+	border: solid 4px black;
+*/
+	border-radius: 4px;
+	transition: background-color 0.2s
+}
+
+body
+{
+	background-image: url("hintergrund.png");
+}
+
+#scoreboard
+{
+    position: absolute;
+	height: 60px;
+	background-color: #00000080;
+	width: 250px;
+	color: white;
+	font-size: 20px;
+}
+#scoreboard *
+{
+	margin: 2px;
+	width: 121px;
+	float: left;
+}
+#heartcontainer
+{
+    position: absolute;
+	height: 60px;
+	left: 250px;
+	width: 200px;
+	background-color: #00000080;
+}
+.herz
+{
+	position:relative;
+	background-image: url("herz.png");
+	width: 64px;
+	height: 64px;
+	float: right;
+/*
+	margin: 0px;
+*/
+	transform: scale(0.9);
+/*
+	transition: background-image 1s ease-in-out;	
+*/
+}
+.herzleer
+{
+	position:relative;
+	background-image: url("herzleer.png");
+	width: 64px;
+	height: 64px;
+	float: right;
+}
+
+
+#menuescreen
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #A5BE3280;
+	z-index: 3
+}
+
+#menuescreen h1
+{
+	text-align: center;
+	font-size: 36px;
+  	position: relative;
+	width: 200px;
+	height: 90px;
+	margin: 125px;
+	margin-top: 300px;
+	z-index: 4;
+}
+
+#menuebrett
+{	
+	position: absolute;
+	font-size: 16px;
+	margin: 10px;
+	bottom: 50px;
+	z-index:9;
+}
+
+#menuebrett p
+{
+	font-size: 16px
+}
+
+
+#menuebutton
+{
+	font-size: 20px;
+	position: relative;
+	width: 300px;
+	height: 100px;
+	margin: 75px;
+	margin-top: 500px;
+	z-index: 4;
+}
+
+#timerbackground
+{
+	background-color: #00000080;
+	position: absolute;
+	top: 60px;
+	width:450px;
+	height: 40px;
+	z-index: 1;
+}
+
+#timerremaining
+{
+	position: absolute;
+	top: 60px;
+	width:450px;
+	height: 40px;
+	background-color: #8be3ff;
+	z-index: 2;
+}
+
+
+
