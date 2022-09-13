@@ -188,6 +188,7 @@ body
 	height: 40px;
 	background-color: #8be3ff;
 	z-index: 2;
+	transform-origin: 0 0;
 }
 
 
